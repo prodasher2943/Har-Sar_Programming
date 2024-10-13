@@ -1,0 +1,86 @@
+nav{
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgb(20, 20, 20) 0 10px 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(7, 7, 7);
+}
+
+nav li{
+    display: inline;
+    padding: 15px 30px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: rgb(255, 255, 255) 0 0 12px;
+    transition: font-size 0.2s ease;
+}
+
+nav img{
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    box-shadow: rgb(255, 255, 255) 0 0 12px;
+}
+
+nav li a:hover{
+    font-size: 22px;
+    color: gray;
+}
+
+#Options{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    text-shadow: rgb(255, 255, 255) 0 0 10px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.optContainer ul li{
+    background-color: rgb(219, 212, 212);
+    width: 30%;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: white 0 0 10px;
+    font-family: sans-serif;
+}
+
+.optContainer ul li img{
+    border-radius: 10px;
+    box-shadow: black 0 0 5px;
+    margin-bottom: 30px;
+}
+
+.optContainer ul li a{
+    padding: 10px 30px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    box-shadow: black 0 0 4px;    
+}
+
+.optContainer ul li h2{
+    margin-bottom: 25px;
+    text-shadow: black 0 0 4px;
+}
