@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photos/logo.jpg">
+    <title>har-sar-programming site</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="photos/logo.jpg" alt="logo" width="40px"></a></li>
+            <li><a href="index.html#Options">Options</a></li>
+            <li><a href="learn.html#html">HTML</a></li>
+            <li><a href="learn.html#css">CSS</a></li>
+            <li><a href="learn.html#python">PYTHON</a></li>
+            <li><a href="learn.html#cpp">C++</a></li>
+            <li><a href="learn.html#cs">C#</a></li>
+            <li><a href="learn.html#php">PHP</a></li>
+            <li><a href="code_editor.html">Code Editor</a></li>
+        </ul>
+    </nav>
+    <div class="learn">
+        <h1 id="cpp">Learn C++</h1>
+        <h2>1. Introduction to C++</h2><br><br>
+        <p>C++ is a powerful, high-performance programming language used in various fields like game development,
+            software engineering, and competitive programming. It supports both procedural and object-oriented
+            programming, making it versatile and efficient.</p><br><hr>
+        <br>
+        <h2>2. Setting up the Environment</h2><br><br>
+        <p>Before you begin coding, you need a C++ compiler. You can use:</p>
+        <ul>
+            <li><b>IDE</b> like Code::Blocks, Visual Studio Code, or CLion.</li>
+            <li><b>Text Editor</b> with a command-line compiler like g++ for Linux or MinGW for Windows.</li>
+        </ul>
+        <br><br>
+        <p>Once set up, create a new file with the extension <abbr>.cpp</abbr>, and you're ready to write your first C++ program!</p>
+        <br><hr><br>
+        <h2>3. Hello, World! Program</h2><br><br>
+        <p>Let's start with a basic "Hello, World!" program to understand the structure of a C++ program.</p>
+        <br>
+        <p><pre>
+            #include &lt;iostream> // Preprocessor directive for input and output
+
+            int main() {
+                std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl; // Prints message to the console
+                return 0; // Indicates successful program execution
+            }
+        </pre></p>
+        <p><b>Explaination:</b></p>
+        <ul>
+            <li><abbr>#include &lt;iostream></abbr>: This includes the input-output stream library.</li>
+            <li><abbr>int main()</abbr>: This is the main function where the program starts executing.</li>
+            <li><abbr>std::cout</abbr>: Used to output (print) text to the console.</li>
+            <li><abbr>return 0;</abbr>: Returns 0 to indicate the program executed successfully.</li>
+        </ul>
+        <br><hr><br>
+        <h2>4. Variables and Data Types</h2>
+        <br><br>
+        <p>Variables store data that can be used later in the program. Common data types in C++ include:</p>
+        <ul>
+            <li><abbr>int</abbr>: for integers.</li>
+            <li><abbr>float</abbr>: for decimal numbers.</li>
+            <li><abbr>char</abbr>: for characters.</li>
+            <li><abbr>bool</abbr>: for true/false values.</li>
+            <li><abbr>string</abbr>: for text (requires including the <abbr>#include &lt;string></abbr> header).</li>
+        </ul>
+        <br>
+        <p><b>Example:</b></p>
+        <br>
+        <p><pre>
+            #include &lt;iostream>
+
+            int main() {
+                int age = 20;
+                float height = 5.9;
+                char grade = 'A';
+                bool isStudent = true;
+            
+                std::cout &lt;&lt; "Age: " &lt;&lt; age &lt;&lt; std::endl;
+                std::cout &lt;&lt; "Height: " &lt;&lt; height &lt;&lt; std::endl;
+                std::cout &lt;&lt; "Grade: " &lt;&lt; grade &lt;&lt; std::endl;
+                std::cout &lt;&lt; "Is Student: " &lt;&lt; isStudent &lt;&lt; std::endl;
+            
+                return 0;
+            }
+        </pre></p>
+        <br><hr><br>
+        <h2>5. Input and Output</h2>
+        <br>
+        <p>You can use <abbr>cin</abbr> for taking input from the user and <abbr>cout</abbr> for output.</p>
+        <br>
+        <p><b>Example:</b></p>
+        <p><pre>
+            #include &lt;iostream>
+
+            int main() {
+                int num;
+                
+                std::cout &lt; "Enter a number: ";
+                std::cin >> num; // Takes input from the user and stores it in 'num'
+                
+                std::cout &lt; "You entered: " &lt; num &lt; std::endl; // Outputs the value of 'num'
+            
+                return 0;
+            }
+        </pre></p>
+        <br><hr><br>
+        <h2>6. Control Structures</h2><br>
+        <p>C++ provides several control structures like <b>if-else</b>, <b>loops</b>, and <b>switch</b> to control the flow of the program.</p>
+        <p><b>1. <b>if-else Statements</b></b></p>
+        <p>Used to make decisions in your program based on conditions.</p>
+        <p><b>Example:</b></p><br>
+        <p><pre>
+            #include &lt;iostream>
+
+            int main() {
+                int age;
+                std::cout &lt; "Enter your age: ";
+                std::cin >> age;
+            
+                if (age >= 18) {
+                    std::cout &lt;&lt; "You are eligible to vote." &lt;&lt; std::endl;
+                } else {
+                    std::cout &lt;&lt; "You are not eligible to vote." &lt;&lt; std::endl;
+                }
+            
+                return 0;
+            }                
+        </pre></p>
+        <p><b>2. For Loops</b></p>
+        <p>Used to repeat a block of code a certain number of times.</p>
+        <p><b>Example:</b></p><br>
+        <p><pre>
+            #include &lt;iostream>
+
+            int main() {
+                for (int i = 1; i &lt;= 5; i++) {
+                    std::cout &lt;&lt; "Count: " &lt;&lt; i &lt;&lt; std::endl;
+                }
+            
+                return 0;
+            }
+        </pre></p>
+        <p><b>3. While Loops</b></p>
+        <p>A loop that continues to execute as long as a condition is true.</p>
+        <p><b>Example:</b></p>
+        <p><pre>
+            #include &lt;iostream>
+
+            int main() {
+                int count = 1;
+                
+                while (count &lt;= 5) {
+                    std::cout &lt;&lt; "Count: " &lt;&lt; count &lt;&lt; std::endl;
+                    count++;
+                }
+            
+                return 0;
+            }                
+        </pre></p>
+        <br><hr><br>
+        <h2>7. Functions</h2><br>
+        <p>Functions are blocks of reusable code. They help structure your code and avoid repetition.</p>
+        <p><b>Example:</b></p>
+        <p><pre>
+            #include &lt;iostream>
+
+            // Function to add two numbers
+            int add(int a, int b) {
+                return a + b;
+            }
+            
+            int main() {
+                int num1, num2;
+                std::cout &lt;&lt; "Enter two numbers: ";
+                std::cin >> num1 >> num2;
+            
+                int result = add(num1, num2); // Function call
+                std::cout &lt;&lt; "Sum: " &lt;&lt; result &lt;&lt; std::endl;
+            
+                return 0;
+            }                
+        </pre></p>
+        <br><hr><br>
+        <h2>8. Arrays</h2>
+        <br>
+        <p>Arrays are collections of elements of the same type, stored at contiguous memory locations.</p>
+        <p><b>Example:</b></p>
+        <p><pre>
+            #include &lt;iostream>
+
+            int main() {
+                int arr[5] = {1, 2, 3, 4, 5};
+            
+                for (int i = 0; i &lt; 5; i++) {
+                    std::cout &lt;&lt; "Element at index " &lt;&lt; i &lt;&lt; ": " &lt;&lt; arr[i] &lt;&lt; std::endl;
+                }
+            
+                return 0;
+            }                
+        </pre></p>
+        <br><hr><br>
+        <h2>9. Conclusion</h2><br>
+        <p>This tutorial covers the basics of C++. Understanding these concepts is essential for further exploration of advanced topics such as object-oriented programming (OOP), pointers, and file handling.</p>
+        <br><br>
+        <p>Start experimenting with these examples, and soon you'll be confident in writing your own C++ programs!</p>
+        <br><hr><br><hr><br>
+    </div>
+</body>
+</html>
